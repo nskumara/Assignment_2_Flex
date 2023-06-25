@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        background: rgb(251, 249, 249);
+        padding: 20px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background: white;
+        width: 290px;
+        height: 420px;
+        margin: 10px;
+        border-radius: 5px;
+        position: relative; /* Added */
+    }
+
+    @font-face {
+    src: url("fonts/Pacifico-Regular.ttf");
+    font-family: Pacifico;
+    }
+
+    @font-face {
+    src: url("fonts/Quicksand-Regular.ttf");
+    font-family: Quicksand;
+    }
+
+    h4 {
+        position: absolute;
+        top: 5px; /* Adjusted */
+        right: 5px; /* Adjusted */
+        color: rgb(245, 244, 244);
+        text-shadow: 2px 2px 4px #000000;
+        font-family: Pacifico;
+        font-size: 30px;
+    }
+
+    p{
+        font-family: Quicksand;
+        padding: 10px;
+
+    }
+
+    .card-image{
+        height: 150px;
+        margin-bottom: 5px;
+        background-size: cover;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .car-1{
+        background-image: url('Img/sri.jpg');
+    }
+
+    .car-2{
+        background-image: url('Img/indo.jpg');
+    }
+
+    .car-3{
+        background-image: url('Img/china.jpg');
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    
+</style>
+<body>
+    <section class="container">
+        <div class="card">
+            <h4><b>SRILANKA</b></h4>
+            <div class="card-image car-1"></div>
+            <p><b>A 19-century hill station Nuwara
+                Eliya keeps its colonial
+                environment with its golf path,
+                gentlemen's clubs, and mock-
+                Tudor buildings. it's far one of the
+                most beautiful places in Sri Lanka
+                for a scenic trail ride. experience
+                the lovely views of the surrounding
+                tea plantations, waterfalls and
+                dramatic mountains the teaching
+                takes you from Kandy to Nuwara
+                Eliya. You wouldn't want the
+                experience to quit!..</b></p>
+        </div>
+        <div class="card">
+            <h4><b>INDONESIA</b></h4>
+            <div class="card-image car-2"></div>
+            <p><b>Indonesia looks at Thailand's
+                rising fortunes in tourism in terms
+                of arrivals (38.2 million in 2018
+                and heading for 40 million this
+                year). Thailand's estimated
+                financial earnings are impressive
+                providing close to 20% in direct
+                contributions to GDP. Tourism
+                revenue figures are rough
+                estimates based on exit surveys at
+                airports.</b></p>
+        </div>
+        <div class="card">
+            <h4><b>CHINA</b></h4>
+            <div class="card-image car-3"></div>
+            <p><b>China is one of the most visited
+                tourist destinations in the world,
+                not only does is provide business
+                opportunities, it also has a lot of
+                people attractions.China’s tourism
+                industry is one of the biggest
+                industries worldwide. China is of
+                the most visited country with over
+                57 million international tourists.</b></p>
+        </div>
+    </section>
+</body>
+</html>
